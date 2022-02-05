@@ -12,6 +12,6 @@ echo $_SERVER['SERVER_NAME'];
 <h1>форма</h1>
 <form action="action.php">
     login <input type="text" name="name">
-    password <input type="text" name="password">
+    password <input type="password" name="password">
     send <input type="submit" value="send">
 </form>
