@@ -13,7 +13,8 @@
     echo $_REQUEST['name'];
     echo " имя </br>";
     echo $_REQUEST['password'];
-    echo "пароль"
+    echo "пароль";
+    var_dump($_SERVER);
 ?>
 </body>
 </html>
