@@ -8,6 +8,7 @@ echo $_SERVER['SERVER_NAME'];
 ?>
 
 <a href="variable_type.php"> ссылка на страницу</a>
+<a href="array.php">array</a>
 
 <h1>форма</h1>
 <?php
