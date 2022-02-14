@@ -55,8 +55,6 @@
                 return $a + $b;
             }
             echo sum(5.4, 5.2);
-
-
             ?>
         </div>
     </div>

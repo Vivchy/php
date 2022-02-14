@@ -10,6 +10,7 @@ echo $_SERVER['SERVER_NAME'];
 <div><a href="variable_type.php"> variable</a></div>
 <div><a href="array.php">array</a></div>
 <div><a href="functions.php">functions</a></div>
+<div><a href="generation.php">generation</a></div>
 
 <h1>форма</h1>
 <?php
