@@ -6,7 +6,7 @@ echo "<p>". date("d.m.y  H:i:s") . "</p>";
 echo $_SERVER['SERVER_NAME'];
 
 ?>
-
+<div><a href="index.php"> index</a></div>
 <div><a href="variable_type.php"> variable</a></div>
 <div><a href="array.php">array</a></div>
 <div><a href="functions.php">functions</a></div>
@@ -31,7 +31,9 @@ if(!isset($_SERVER['QUERY_STRING'])){
 
 <?php }
 else {
-    if ($_REQUEST['name'] == 'user'){ ?>
+    $check_pass = '58b4e38f66bcdb546380845d6af27187';
+    $pass = md5($_REQUEST['password']);
+    if ($pass === $check_pass){ ?>
         <h1>Access</h1>
         <p>hello <?= $_REQUEST['name']; ?> </p>
 
@@ -43,5 +45,8 @@ else {
             }
         }
     }
-
+    else { ?>
+        <h1>не верный пароль</h1>
+    <?php
+    }
 }?>

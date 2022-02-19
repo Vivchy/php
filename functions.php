@@ -57,6 +57,35 @@
             echo sum(5.4, 5.2);
             ?>
         </div>
+        <div>
+            <h4>Хеш-функции</h4>
+                <?php
+                $str = 'qwerty1234';
+                $pass = md5($str);
+                echo $pass . '<br/>';
+
+                ?>
+
+        </div>
+        <div>
+            <h4>рандом</h4>
+            <?php
+            $count = 0;
+            $arr = [];
+            for ($i = 0; $i<=1000; $i++){
+                $rand = mt_rand(1, 2);
+                if (!isset($arr[$rand])){
+                    $arr[$rand] = 1;
+                }
+                else $arr[$rand]++;
+            }
+            ksort($arr);
+            foreach ($arr as $index => $item) {
+                echo $item . '<br/>';
+            }
+            var_dump($arr);
+            ?>
+        </div>
     </div>
 </body>
 </html>
